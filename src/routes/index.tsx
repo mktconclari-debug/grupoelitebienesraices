@@ -453,7 +453,7 @@ function Index() {
                 ))}
               </ul>
               <a className="btn-oferta outline" href="#cta">
-                Quiero el curso pregrabado
+                Quiero el sistema completo
               </a>
             </article>
 
