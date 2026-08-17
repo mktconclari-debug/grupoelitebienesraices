@@ -205,7 +205,7 @@ const MENTORIA = [
 
 const STATS = [
   { n: "12", l: "Años en el rubro" },
-  { n: "50", l: "Asesores en el equipo" },
+  { n: "50", l: "Inmobiliarios en el equipo" },
   { n: "+$10M", l: "En carteras activas" },
 ];
 
