@@ -167,7 +167,7 @@ const FAQS = [
   },
   {
     q: "¿Cuál es la diferencia entre el curso y la mentoría?",
-    a: "El curso son los 6 módulos pregrabados más todas las herramientas: para quien quiere aprender el sistema a su ritmo. La mentoría suma una clase semanal 1 a 1, soporte directo con Adriana 24/7 y la posibilidad de sumarse al equipo de Grupo Elite con estructura y operaciones reales.",
+    a: "El curso son los 6 módulos pregrabados más todas las herramientas: para quien quiere aprender el sistema a su ritmo. La mentoría suma una clase semanal 1 a 1, soporte directo con Adriana 24/7 y la posibilidad de iniciar un proceso de admisión para sumarse al equipo de Grupo Elite con estructura y operaciones reales. Eso no es automático: quien accede a la mentoría puede aplicar, y la decisión final de ingreso es nuestra tras una reunión previa.",
   },
   {
     q: "¿Qué es Grupo Elite y para qué sirve sumarse?",
@@ -555,7 +555,7 @@ function Index() {
             empezamos.
           </p>
           <a className="btn-cta-final" href="#oferta">
-            Quiero el sistema — elegir mi opción
+            Quiero el sistema
           </a>
           <p className="cta-final-note">Curso U$D 397 + IVA · Mentoría 1 a 1 U$D 1000 + IVA</p>
         </div>
@@ -570,7 +570,7 @@ function Index() {
       </footer>
 
       <div className="sticky-cta">
-        <a href="#oferta">Quiero el sistema — elegir mi opción</a>
+        <a href="#oferta">Quiero el sistema</a>
       </div>
     </div>
   );
