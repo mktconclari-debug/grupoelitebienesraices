@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import "../styles/academia.css";
+import adriana from "../assets/adriana.png.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -387,17 +389,14 @@ function Index() {
             </div>
           </div>
           <div className="autoridad-photo">
-            <div className="photo-placeholder">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.7-8 6v2h16v-2c0-3.3-3.6-6-8-6z" />
-              </svg>
-              <p>
-                Insertar foto
-                <br />
-                de Adriana aquí
-              </p>
-            </div>
+            <img
+              src={adriana.url}
+              alt="Adriana, fundadora de Grupo Elite Bienes Raíces"
+              className="autoridad-img"
+              loading="lazy"
+            />
           </div>
+
         </div>
       </section>
 
