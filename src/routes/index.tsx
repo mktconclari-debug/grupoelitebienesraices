@@ -68,19 +68,19 @@ const MODULOS = [
 const DOLORES = [
   {
     t: "Prospectás todos los días y el propietario siempre te dice que no",
-    s: "Llamadas, mensajes, timbre tocado — y la puerta cerrada igual.",
+    s: "Llamás, mensajes, timbre tocado — y la puerta cerrada igual.",
   },
   {
     t: "Llegás al prelisting y las objeciones te dejan sin respuesta",
-    s: '"La tasación está baja, yo pretendía mucho más", "voy a pensar", "tengo otra inmobiliaria más barata" — y no sabés qué decir.',
+    s: '"La tasación está baja, yo pretendía mucho más", "Lo voy a pensar", "tengo otra inmobiliaria que no me cobra comisión" — y no sabés qué decir.',
   },
   {
     t: "Trabajás semanas enteras sin cobrar un peso",
     s: "Comisión que no aparece, incertidumbre constante, el mes que no cierra.",
   },
   {
-    t: "No tenés cartera armada ni sabés cómo construirla",
-    s: "Ves a otros inmobiliarios captando propiedades y no entendés por qué a vos no te sale.",
+    t: "No tenés cartera armada ni sabés cómo construirla bien",
+    s: "Ves a otros inmobiliarios captando propiedades y no entendés por qué vos no podés captar.",
   },
   {
     t: "Tenés ganas, energía y disposición — y aun así los resultados no llegan",
@@ -286,7 +286,7 @@ function Index() {
 
       <section className="section-dolor">
         <div className="inner">
-          <p className="section-label">Reconocete en algo de esto</p>
+          <p className="section-label">Reconocerte en algo de esto</p>
           <h2 className="section-title">¿Te suena familiar?</h2>
           <div className="dolor-list">
             {DOLORES.map((d) => (
