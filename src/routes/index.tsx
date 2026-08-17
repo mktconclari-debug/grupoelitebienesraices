@@ -476,7 +476,7 @@ function Index() {
                 ))}
               </ul>
               <a className="btn-oferta gold" href="#cta">
-                Quiero la mentoría + Grupo Elite
+                Quiero aplicar a la mentoría 1 a 1
               </a>
             </article>
           </div>
