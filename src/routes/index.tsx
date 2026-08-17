@@ -9,13 +9,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Aprendé el sistema que construyó una cartera de resultados reales. 5 módulos, acompañamiento 1 a 1 y la posibilidad de sumarte a Grupo Elite Bienes Raíces.",
+          "Aprendé el sistema que construyó una cartera de resultados reales. 6 módulos, acompañamiento 1 a 1 y la posibilidad de sumarte a Grupo Elite Bienes Raíces.",
       },
       { property: "og:title", content: "Academia Grupo Elite — Formación para Asesores Inmobiliarios" },
       {
         property: "og:description",
         content:
-          "5 módulos, herramientas listas para usar y mentoría 1 a 1 con Adriana. El sistema que aplica un equipo de 50 asesores en Puerto Madero.",
+          "6 módulos, herramientas listas para usar y mentoría 1 a 1 con Adriana. El sistema que aplica un equipo de 50 inmobiliarios en Puerto Madero.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -27,33 +27,39 @@ export const Route = createFileRoute("/")({
 const MODULOS = [
   {
     n: 1,
-    titulo: "La mentalidad del asesor exitoso",
+    titulo: "Mentalidad e identidad del asesor",
     texto:
-      "Trabajo de identidad, eliminación de excusas y construcción de disciplina. Porque si tu cabeza no está bien parada, ninguna técnica te sirve.",
+      "Identidad, disciplina, objetivos, organización y eliminación de excusas. La base de todo.",
   },
   {
     n: 2,
-    titulo: "Prospección que funciona",
+    titulo: "El negocio inmobiliario",
     texto:
-      "Cómo activar tu base de contactos, guiones exactos para llamar a propietarios sin sonar vendedor y sistema de seguimiento para que ningún contacto se enfríe.",
+      "Cómo funciona una operación, el rol del asesor, de dónde salen los honorarios y cómo construir una cartera.",
   },
   {
     n: 3,
-    titulo: "Captación profesional",
+    titulo: "Herramientas y sistema de trabajo",
     texto:
-      "Armado del ACM que convence, prelisting profesional y manejo de las objeciones típicas del propietario. De frente, sin rodeos.",
+      "Cómo organizar contactos, agenda, propiedades y seguimientos. Método que se pueda repetir todos los días.",
   },
   {
     n: 4,
-    titulo: "Marca personal",
+    titulo: "Prospección y base relacional",
     texto:
-      "Por qué la gente compra personas y no inmobiliarias. Cómo grabar contenido aunque te dé vergüenza y cómo captar clientes a través de redes sociales.",
+      "Cómo trabajar la base de contactos, llamadas en frío, guiones para hablar con propietarios y sistema de seguimiento.",
   },
   {
     n: 5,
-    titulo: "Ventas, negociación y cierre",
+    titulo: "Captación y marca personal",
     texto:
-      "Cómo mostrar una propiedad, cómo negociar, cómo cerrar la reserva y cómo hacer la postventa para generar referidos que te traigan más operaciones.",
+      "ACM, prelisting, presentación de servicios, manejo de objeciones y posicionamiento. Más construcción de marca personal y contenido en redes.",
+  },
+  {
+    n: 6,
+    titulo: "Venta, negociación y cierre",
+    texto:
+      "Cómo mostrar una propiedad, negociar, cerrar la reserva y hacer postventa para generar referidos.",
   },
 ];
 
@@ -64,7 +70,7 @@ const DOLORES = [
   },
   {
     t: "Llegás al prelisting y las objeciones te dejan sin respuesta",
-    s: '"La tasación está alta", "voy a pensar", "tengo otra inmobiliaria más barata" — y no sabés qué decir.',
+    s: '"La tasación está baja, yo pretendía mucho más", "voy a pensar", "tengo otra inmobiliaria más barata" — y no sabés qué decir.',
   },
   {
     t: "Trabajás semanas enteras sin cobrar un peso",
@@ -72,7 +78,7 @@ const DOLORES = [
   },
   {
     t: "No tenés cartera armada ni sabés cómo construirla",
-    s: "Ves a otros asesores captando propiedades y no entendés por qué a vos no te sale.",
+    s: "Ves a otros inmobiliarios captando propiedades y no entendés por qué a vos no te sale.",
   },
   {
     t: "Tenés ganas, energía y disposición — y aun así los resultados no llegan",
@@ -93,7 +99,7 @@ const CASOS = [
     rol: "Empezó con 18 años",
     pre: "Hoy tiene 21 años, ",
     num: "$4M",
-    post: " en cartera, su propio equipo y es N°1 Coldwell Banker CABA 2025.",
+    post: " en cartera y su propio equipo.",
   },
   {
     ini: "M.A.",
@@ -134,11 +140,11 @@ const BONUS = [
   {
     icon: "🏠",
     t: "Manual de Captación de Grupo Elite",
-    p: "El mismo manual que usa el equipo de 50 asesores en la oficina.",
+    p: "El mismo manual que usa el equipo de 50 inmobiliarios en la oficina.",
   },
   {
     icon: "🤖",
-    t: "Prompts de IA para asesores",
+    t: "Prompts de IA para inmobiliarios",
     p: "IA entrenada para responder tus dudas 24/7 y prompts específicos para el rubro.",
   },
   {
@@ -155,34 +161,34 @@ const FAQS = [
   },
   {
     q: "¿Cuánto tiempo tarda en verse resultados?",
-    a: "Depende de cuánto trabajás el sistema. Los asesores más aplicados del equipo tuvieron sus primeras captaciones en las primeras semanas. Los que tardaron más fueron los que aplicaron de forma intermitente. El sistema funciona — el resultado depende de la consistencia.",
+    a: "Depende de cuánto trabajás el sistema. Los inmobiliarios más aplicados del equipo tuvieron sus primeras captaciones en las primeras semanas. Los que tardaron más fueron los que aplicaron de forma intermitente. El sistema funciona — el resultado depende de la consistencia.",
   },
   {
     q: "¿Cuál es la diferencia entre el curso y la mentoría?",
-    a: "El curso son los 5 módulos pregrabados más todas las herramientas: para quien quiere aprender el sistema a su ritmo. La mentoría suma una clase semanal 1 a 1, soporte directo con Adriana 24/7 y la posibilidad de sumarse al equipo de Grupo Elite con estructura y operaciones reales.",
+    a: "El curso son los 6 módulos pregrabados más todas las herramientas: para quien quiere aprender el sistema a su ritmo. La mentoría suma una clase semanal 1 a 1, soporte directo con Adriana 24/7 y la posibilidad de sumarse al equipo de Grupo Elite con estructura y operaciones reales.",
   },
   {
     q: "¿Qué es Grupo Elite y para qué sirve sumarse?",
-    a: "Grupo Elite Bienes Raíces es una inmobiliaria real con oficina física en Puerto Madero, Rosario Vera Peñaloza 545, trabajando bajo el sistema Coldwell Banker. Sumarse significa tener estructura, liderazgo y un equipo de 50 personas desde el día uno — sin construir todo de cero solo.",
+    a: "Grupo Elite Bienes Raíces es una inmobiliaria real con oficina física en Puerto Madero, Rosario Vera Peñaloza 545. Sumarse significa tener estructura, liderazgo y un equipo de 50 personas desde el día uno — sin construir todo de cero solo.",
   },
   {
     q: "¿Tengo que sumarme a Grupo Elite si compro la mentoría?",
-    a: "No es obligatorio. La Academia es un producto de formación independiente: podés trabajar en cualquier inmobiliaria o de forma independiente. La opción de sumarse a Grupo Elite existe si es lo que querés — es una puerta abierta, no una condición.",
+    a: "No es automático. Quienes acceden a la mentoría 1 a 1 tienen la posibilidad de iniciar un proceso de admisión para sumarse al equipo de Grupo Elite Bienes Raíces. Esto implica una entrevista previa con el equipo, ya que buscamos perfiles que compartan nuestros valores, ética y forma de trabajar. No todos los que compran la mentoría van a ser parte del equipo — y eso es intencional: queremos mantener la calidad y la energía de Grupo Elite.",
   },
   {
     q: "¿Cómo accedo al contenido?",
-    a: "Apenas confirmes tu inscripción recibís acceso a la plataforma donde están los 5 módulos, todos los materiales y la comunidad. El acceso es inmediato — no tenés que esperar para empezar.",
+    a: "Apenas confirmes tu inscripción recibís acceso a la plataforma donde están los 6 módulos, todos los materiales y la comunidad. El acceso es inmediato — no tenés que esperar para empezar.",
   },
 ];
 
 const CURSO = [
-  "5 módulos completos en video",
+  "6 módulos completos en video",
   "IA entrenada para responder tus dudas 24/7",
   "+50 scripts de WhatsApp listos para usar",
   "Manual de captación de Grupo Elite",
   "20 preguntas para prelisting y prebuying",
   "Planilla de KPIs",
-  "Prompts de IA para asesores",
+  "Prompts de IA para inmobiliarios",
   "Calendario de prospección de 90 días",
   "Comunidad Skool y TikTok",
 ];
@@ -193,7 +199,7 @@ const MENTORIA = [
   "Soporte directo 24/7 con Adriana",
   "Acceso a sumarte a Grupo Elite Bienes Raíces",
   "Oficina real en Puerto Madero",
-  "Estructura Coldwell Banker desde el día 1",
+  "Estructura y equipo desde el día 1",
   "Casos reales, operaciones reales, equipo real",
 ];
 
@@ -201,7 +207,6 @@ const STATS = [
   { n: "12", l: "Años en el rubro" },
   { n: "50", l: "Asesores en el equipo" },
   { n: "+$10M", l: "En carteras activas" },
-  { n: "N°1", l: "Coldwell Banker CABA" },
 ];
 
 function Check() {
@@ -244,7 +249,7 @@ function Index() {
           <em>Es que nadie te enseñó el sistema.</em>
         </h1>
         <p className="hero-sub">
-          5 módulos, acompañamiento real y los resultados que no llegaron solos — esta vez con un mapa.
+          6 módulos, acompañamiento real y los resultados que no llegaron solos — esta vez con un mapa.
         </p>
         <a className="btn-primary" href="#oferta">
           Quiero el sistema — elegir mi opción
@@ -331,7 +336,7 @@ function Index() {
         <div className="inner">
           <p className="section-label">El método</p>
           <h2 className="section-title">
-            5 módulos.
+            6 módulos.
             <br />
             Un sistema completo.
           </h2>
@@ -367,8 +372,7 @@ function Index() {
                 funcionaba. Un sistema que nadie me enseñó.
               </p>
               <p>
-                Hace dos años fundé Grupo Elite Bienes Raíces, nuestra oficina en Puerto Madero bajo el
-                sistema Coldwell Banker. Hoy lidero un equipo de 50 personas.
+                Hace dos años fundé Grupo Elite Bienes Raíces, nuestra oficina en Puerto Madero. Hoy lidero un equipo de 50 personas.
               </p>
               <p>
                 La Academia la armé con todo lo que a mí me hubiera gustado tener cuando empecé. No es
@@ -377,9 +381,9 @@ function Index() {
             </div>
             <div className="autoridad-badges">
               <span className="badge">12 años en Real Estate</span>
-              <span className="badge">Broker Coldwell Banker</span>
-              <span className="badge">50 asesores</span>
-              <span className="badge">Puerto Madero</span>
+              <span className="badge">Broker — Grupo Elite Bienes Raíces</span>
+              <span className="badge">50 inmobiliarios</span>
+              <span className="badge">CABA y Gran Buenos Aires</span>
             </div>
           </div>
           <div className="autoridad-photo">
