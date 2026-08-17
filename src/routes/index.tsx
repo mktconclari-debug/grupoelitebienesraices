@@ -245,12 +245,10 @@ function Index() {
       <header className="hero">
         <span className="hero-pill">Sistema de formación inmobiliaria</span>
         <h1>
-          El problema no sos vos.
-          <br />
-          <em>Es que nadie te enseñó el sistema.</em>
+          Este es el paso a paso exacto para escalar dentro de Real State, sistema validado en más de 50 inmobiliarios.
         </h1>
         <p className="hero-sub">
-          Este es el paso a paso exacto para escalar dentro de Real State, sistema validado en más de 50 inmobiliarios.
+          Sistema de formación inmobiliaria para captar más, negociar mejor y cerrar más rápido.
         </p>
         <a className="btn-primary" href="#oferta">
           Quiero el sistema
