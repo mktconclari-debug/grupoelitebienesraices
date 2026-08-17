@@ -475,7 +475,12 @@ function Index() {
                   </li>
                 ))}
               </ul>
-              <a className="btn-oferta gold" href="#cta">
+              <a
+                className="btn-oferta gold"
+                href="https://wa.me/5491158007135?text=Dola%20Adri%20como%20estas%3F%20Me%20gustaria%20aplicar%20a%20la%20mentoria%201%3A1%20con%20vos!%20Comentame%20como%20seria%20para%20aplicar"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Quiero aplicar a la mentoría 1 a 1
               </a>
             </article>
