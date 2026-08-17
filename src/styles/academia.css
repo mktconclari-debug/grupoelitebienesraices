@@ -714,6 +714,13 @@ html {
   color: var(--gold);
   line-height: 1;
 }
+.academia .precio-iva {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gold-soft);
+  margin-left: 4px;
+  align-self: flex-start;
+}
 .academia .oferta-includes {
   list-style: none;
   display: flex;
