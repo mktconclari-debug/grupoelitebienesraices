@@ -452,7 +452,12 @@ function Index() {
                   </li>
                 ))}
               </ul>
-              <a className="btn-oferta outline" href="#cta">
+              <a
+                className="btn-oferta outline"
+                href="https://www.skool.com/academia-grupo-elite-3856/about"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Quiero el sistema completo
               </a>
             </article>
