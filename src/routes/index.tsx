@@ -468,8 +468,7 @@ function Index() {
               </h3>
               <div className="oferta-precio">
                 <span className="precio-cur">U$D</span>
-                <span className="precio-num">1000</span>
-                <span className="precio-iva">+ IVA</span>
+                <span className="precio-num">1000 + IVA</span>
               </div>
               <ul className="oferta-includes">
                 {MENTORIA.map((i) => (
