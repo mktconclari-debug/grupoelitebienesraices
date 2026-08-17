@@ -555,7 +555,7 @@ function Index() {
             empezamos.
           </p>
           <a className="btn-cta-final" href="#oferta">
-            Quiero el sistema — elegir mi opción
+            Quiero el sistema
           </a>
           <p className="cta-final-note">Curso U$D 397 + IVA · Mentoría 1 a 1 U$D 1000 + IVA</p>
         </div>
@@ -570,7 +570,7 @@ function Index() {
       </footer>
 
       <div className="sticky-cta">
-        <a href="#oferta">Quiero el sistema — elegir mi opción</a>
+        <a href="#oferta">Quiero el sistema</a>
       </div>
     </div>
   );
