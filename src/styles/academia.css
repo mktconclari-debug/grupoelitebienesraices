@@ -1,0 +1,1083 @@
+.academia,
+.academia *,
+.academia *::before,
+.academia *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.academia {
+  --navy: #0b1c2c;
+  --navy-mid: #12273a;
+  --navy-light: #1a3348;
+  --gold: #c9a84c;
+  --gold-light: #e8c96a;
+  --gold-pale: #f5e9c8;
+  --white: #ffffff;
+  --off-white: #f8f5ee;
+  --text-dark: #0b1c2c;
+  --text-mid: #2a3c4e;
+  --red: #b23b24;
+  --green: #3d6b47;
+  --gold-gradient: linear-gradient(
+    110deg,
+    #a07830 0%,
+    #c9a84c 25%,
+    #f0d078 45%,
+    #ffe9a0 50%,
+    #f0d078 55%,
+    #c9a84c 75%,
+    #a07830 100%
+  );
+  font-family: "Montserrat", sans-serif;
+  background: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── SHIMMER ─── */
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+/* ─── CLICK SPARK ─── */
+@keyframes spark-out {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+.spark {
+  position: fixed;
+  pointer-events: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffe9a0 0%, #c9a84c 50%, transparent 70%);
+  z-index: 9999;
+  transform: scale(0);
+  animation: spark-out 0.45s ease-out forwards;
+}
+
+/* ─── NAV STRIP ─── */
+.academia .nav-strip {
+  background: var(--navy);
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.academia .nav-logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ─── HERO ─── */
+.academia .hero {
+  background: var(--navy);
+  padding: clamp(48px, 8vw, 100px) clamp(20px, 5vw, 80px) clamp(40px, 6vw, 80px);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.academia .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201, 168, 76, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+.academia .hero > * {
+  position: relative;
+}
+.academia .hero-pill {
+  display: inline-block;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 2px;
+  margin-bottom: 28px;
+}
+.academia .hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.2rem, 7vw, 5rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--white);
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.academia .hero h1 em {
+  font-style: italic;
+}
+.academia .hero-sub {
+  font-size: clamp(0.9rem, 2.2vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 640px;
+  margin: 0 auto 36px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.academia .btn-primary {
+  display: inline-block;
+  background: var(--gold-gradient);
+  background-size: 250% auto;
+  animation: shimmer 4s linear infinite;
+  color: var(--navy);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 18px 42px;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  max-width: 440px;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+.academia .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.4);
+}
+.academia .hero-note {
+  margin-top: 16px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 0.05em;
+}
+.academia .hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: clamp(20px, 5vw, 60px);
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(201, 168, 76, 0.2);
+  flex-wrap: wrap;
+}
+.academia .stat-item {
+  text-align: center;
+}
+.academia .stat-num {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+}
+.academia .stat-label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 6px;
+  display: block;
+}
+
+/* ─── VIDEO ─── */
+.academia .section-video {
+  background: var(--off-white);
+  padding: clamp(48px, 8vw, 90px) clamp(20px, 5vw, 80px);
+}
+.academia .section-video .inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.academia .video-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+}
+.academia .video-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  color: var(--text-dark);
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+.academia .video-frame {
+  position: relative;
+  padding-bottom: 56.25%;
+  background: var(--navy);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(11, 28, 44, 0.2);
+}
+.academia .video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.academia .video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.academia .play-btn {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  background-size: 250% auto;
+  animation: shimmer 4s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.academia .play-btn svg {
+  width: 28px;
+  height: 28px;
+  fill: var(--navy);
+  margin-left: 4px;
+}
+.academia .video-placeholder-text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ─── DOLOR ─── */
+.academia .section-dolor {
+  background: var(--white);
+  padding: clamp(48px, 8vw, 90px) clamp(20px, 5vw, 80px);
+}
+.academia .section-dolor .inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.academia .section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 14px;
+  text-align: center;
+}
+.academia .section-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 48px;
+  line-height: 1.15;
+}
+.academia .dolor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.academia .dolor-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--off-white);
+  border-left: 3px solid var(--red);
+  border-radius: 0 3px 3px 0;
+}
+.academia .dolor-x {
+  color: var(--red);
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.academia .dolor-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: var(--text-dark);
+  font-style: italic;
+  line-height: 1.5;
+}
+.academia .dolor-sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  font-style: normal;
+  margin-top: 4px;
+  display: block;
+}
+
+/* ─── PROMESA ─── */
+.academia .section-promesa {
+  background: var(--navy);
+  padding: clamp(48px, 8vw, 90px) clamp(20px, 5vw, 80px);
+  text-align: center;
+}
+.academia .section-promesa .inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.academia .promesa-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.academia .promesa-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+  color: var(--white);
+  margin-bottom: 24px;
+  line-height: 1.15;
+}
+.academia .promesa-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+.academia .promesa-body {
+  font-size: clamp(0.9rem, 2.2vw, 1.05rem);
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+.academia .promesa-body p + p {
+  margin-top: 14px;
+}
+.academia .promesa-body .cierre {
+  color: var(--gold-pale);
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 24px;
+}
+.academia .btn-secondary {
+  display: inline-block;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  background: transparent;
+}
+.academia .btn-secondary:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+/* ─── MÓDULOS ─── */
+.academia .section-modulos {
+  background: var(--off-white);
+  padding: clamp(48px, 8vw, 90px) clamp(20px, 5vw, 80px);
+}
+.academia .section-modulos .inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.academia .modulos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 48px;
+}
+.academia .modulo-card {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 24px;
+  align-items: start;
+  background: var(--white);
+  padding: 28px;
+  border-radius: 4px;
+  box-shadow: 0 2px 16px rgba(11, 28, 44, 0.06);
+}
+.academia .modulo-num {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  background-size: 250% auto;
+  animation: shimmer 4s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  flex-shrink: 0;
+}
+.academia .modulo-info h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.academia .modulo-info h4 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.1rem, 2.8vw, 1.45rem);
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.academia .modulo-info p {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 1.65;
+}
+
+/* ─── AUTORIDAD ─── */
+.academia .section-autoridad {
+  background: var(--navy);
+  padding: clamp(48px, 8vw, 90px) clamp(20px, 5vw, 80px);
+}
+.academia .section-autoridad .inner {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.academia .autoridad-text .section-label {
+  text-align: left;
+}
+.academia .autoridad-text h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  color: var(--white);
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+.academia .autoridad-text h2 em {
+  font-style: italic;
+  color: var(--gold);
+}
+.academia .autoridad-body {
+  font-size: clamp(0.88rem, 2vw, 1rem);
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.academia .autoridad-body p + p {
+  margin-top: 14px;
+}
+.academia .autoridad-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+.academia .badge {
+  background: rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  color: var(--gold);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 2px;
+}
+.academia .autoridad-photo {
+  background: var(--navy-light);
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.academia .photo-placeholder {
+  text-align: center;
+  padding: 40px 20px;
+}
+.academia .photo-placeholder svg {
+  width: 80px;
+  height: 80px;
+  fill: rgba(201, 168, 76, 0.3);
+  margin-bottom: 16px;
+}
+.academia .photo-placeholder p {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+/* ─── CASOS ─── */
+.academia .section-casos {
+  background: var(--white);
+  padding: clamp(48px, 8vw, 90px) clamp(20px, 5vw, 80px);
+}
+.academia .section-casos .inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.academia .casos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 48px;
+}
+.academia .caso-card {
+  background: var(--off-white);
+  border-radius: 4px;
+  padding: 28px 28px 24px;
+  border-bottom: 3px solid var(--gold);
+  position: relative;
+  overflow: hidden;
+}
+.academia .caso-card::before {
+  content: "\201C";
+  position: absolute;
+  top: -8px;
+  right: 20px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 8rem;
+  color: rgba(201, 168, 76, 0.1);
+  line-height: 1;
+  pointer-events: none;
+}
+.academia .caso-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.academia .caso-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  background-size: 250% auto;
+  animation: shimmer 4s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  flex-shrink: 0;
+}
+.academia .caso-meta h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+.academia .caso-meta span {
+  font-size: 0.72rem;
+  color: var(--text-mid);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.academia .caso-result {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1rem, 2.8vw, 1.2rem);
+  color: var(--text-dark);
+  font-style: italic;
+  line-height: 1.6;
+}
+.academia .caso-num {
+  display: inline-block;
+  background: var(--gold-gradient);
+  background-size: 250% auto;
+  animation: shimmer 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.1em;
+}
+
+/* ─── OFERTA ─── */
+.academia .section-oferta {
+  background: var(--off-white);
+  padding: clamp(48px, 8vw, 90px) clamp(20px, 5vw, 80px);
+}
+.academia .section-oferta .inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.academia .oferta-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 48px;
+}
+.academia .oferta-card {
+  background: var(--white);
+  border-radius: 6px;
+  padding: 36px 32px;
+  box-shadow: 0 4px 24px rgba(11, 28, 44, 0.08);
+}
+.academia .oferta-card.featured {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+.academia .oferta-card.featured::before {
+  content: "MÁS ELEGIDA";
+  position: absolute;
+  top: 18px;
+  right: -28px;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  padding: 5px 40px;
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+.academia .oferta-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.academia .oferta-card.featured .oferta-tag {
+  color: var(--gold-light);
+}
+.academia .oferta-nombre {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+.academia .oferta-card.featured .oferta-nombre {
+  color: var(--white);
+}
+.academia .oferta-precio {
+  margin: 20px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.academia .precio-cur {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-top: 4px;
+}
+.academia .precio-num {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.academia .oferta-includes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.academia .oferta-includes li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+.academia .oferta-card.featured .oferta-includes li {
+  color: rgba(255, 255, 255, 0.75);
+}
+.academia .check-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.academia .check-icon svg {
+  width: 10px;
+  height: 10px;
+  fill: white;
+  stroke: none;
+}
+.academia .btn-oferta {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+.academia .btn-oferta:hover {
+  transform: translateY(-2px);
+}
+.academia .btn-oferta.gold {
+  background: var(--gold-gradient);
+  background-size: 250% auto;
+  animation: shimmer 4s linear infinite;
+  color: var(--navy);
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.35);
+}
+.academia .btn-oferta.outline {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+.academia .btn-oferta.outline:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+/* ─── BONUS ─── */
+.academia .section-bonus {
+  background: var(--navy);
+  padding: clamp(36px, 6vw, 70px) clamp(20px, 5vw, 80px);
+}
+.academia .section-bonus .inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.academia .section-bonus .section-title {
+  color: var(--white);
+  margin-bottom: 0;
+}
+.academia .bonus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 32px;
+}
+.academia .bonus-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: 3px;
+}
+.academia .bonus-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+.academia .bonus-info h4 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 4px;
+}
+.academia .bonus-info p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.55;
+}
+
+/* ─── FAQ ─── */
+.academia .section-faq {
+  background: var(--white);
+  padding: clamp(48px, 8vw, 90px) clamp(20px, 5vw, 80px);
+}
+.academia .section-faq .inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.academia .faq-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.academia .faq-item {
+  border-bottom: 1px solid rgba(11, 28, 44, 0.1);
+}
+.academia .faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 20px 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.88rem, 2vw, 1rem);
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: color 0.2s;
+}
+.academia .faq-q:hover,
+.academia .faq-q.open {
+  color: var(--gold);
+}
+.academia .faq-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: transform 0.25s;
+}
+.academia .faq-q.open .faq-icon {
+  transform: rotate(45deg);
+}
+.academia .faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.35s ease,
+    padding 0.25s;
+}
+.academia .faq-a.open {
+  max-height: 400px;
+  padding-bottom: 20px;
+}
+.academia .faq-a p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  color: var(--text-mid);
+  line-height: 1.8;
+  font-style: italic;
+  padding: 0 4px;
+}
+
+/* ─── CTA FINAL ─── */
+.academia .section-cta-final {
+  background: var(--navy);
+  padding: clamp(56px, 9vw, 100px) clamp(20px, 5vw, 80px);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.academia .section-cta-final::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 50% at 50% 100%, rgba(201, 168, 76, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.academia .section-cta-final .inner {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+}
+.academia .cta-final-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  color: var(--white);
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+.academia .cta-final-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+.academia .cta-final-sub {
+  font-size: clamp(0.88rem, 2vw, 1rem);
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 540px;
+  margin: 0 auto 40px;
+  line-height: 1.75;
+}
+.academia .btn-cta-final {
+  display: inline-block;
+  background: var(--gold-gradient);
+  background-size: 250% auto;
+  animation: shimmer 4s linear infinite;
+  color: var(--navy);
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 20px 48px;
+  border-radius: 3px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 8px 40px rgba(201, 168, 76, 0.3);
+  transition: transform 0.15s;
+}
+.academia .btn-cta-final:hover {
+  transform: translateY(-2px);
+}
+.academia .cta-final-note {
+  margin-top: 18px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.06em;
+}
+
+/* ─── FOOTER ─── */
+.academia footer {
+  background: var(--navy-mid);
+  border-top: 1px solid rgba(201, 168, 76, 0.15);
+  padding: 28px 24px 90px;
+  text-align: center;
+}
+.academia .footer-logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+.academia footer p {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 0.05em;
+}
+.academia footer a {
+  color: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+}
+.academia footer a:hover {
+  color: var(--gold);
+}
+
+/* ─── STICKY CTA MOBILE ─── */
+.academia .sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--navy);
+  border-top: 1px solid rgba(201, 168, 76, 0.25);
+  padding: 12px 16px;
+  z-index: 100;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.3);
+}
+.academia .sticky-cta a {
+  display: block;
+  background: var(--gold-gradient);
+  background-size: 250% auto;
+  animation: shimmer 4s linear infinite;
+  color: var(--navy);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 15px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ─── SEPARADOR DORADO ─── */
+.academia .gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9a84c 30%, #e8c96a 50%, #c9a84c 70%, transparent);
+  margin: 0 auto;
+  max-width: 240px;
+  border: none;
+  opacity: 0.5;
+}
+
+/* ─── DESKTOP ─── */
+@media (min-width: 768px) {
+  .academia .oferta-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .academia .section-autoridad .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .academia .casos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .academia .modulos-grid {
+    gap: 16px;
+  }
+  .academia footer {
+    padding-bottom: 28px;
+  }
+  .academia .sticky-cta {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .academia .oferta-grid {
+    gap: 32px;
+  }
+}
