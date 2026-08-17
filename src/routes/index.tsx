@@ -250,12 +250,11 @@ function Index() {
           <em>Es que nadie te enseñó el sistema.</em>
         </h1>
         <p className="hero-sub">
-          6 módulos, acompañamiento real y los resultados que no llegaron solos — esta vez con un mapa.
+          Este es el paso a paso exacto para escalar dentro de Real State, sistema validado en más de 50 inmobiliarios.
         </p>
         <a className="btn-primary" href="#oferta">
-          Quiero el sistema — elegir mi opción
+          Quiero el sistema
         </a>
-        <p className="hero-note">Curso desde U$D 400 · Mentoría 1 a 1 desde U$D 1000</p>
         <div className="hero-stats">
           {STATS.map((s) => (
             <div className="stat-item" key={s.l}>
