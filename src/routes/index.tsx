@@ -441,7 +441,7 @@ function Index() {
               <h3 className="oferta-nombre">Curso Pregrabado</h3>
               <div className="oferta-precio">
                 <span className="precio-cur">U$D</span>
-                <span className="precio-num">400</span>
+                <span className="precio-num">497</span>
               </div>
               <ul className="oferta-includes">
                 {CURSO.map((i) => (
@@ -557,7 +557,7 @@ function Index() {
           <a className="btn-cta-final" href="#oferta">
             Quiero el sistema — elegir mi opción
           </a>
-          <p className="cta-final-note">Curso desde U$D 400 · Mentoría + Grupo Elite desde U$D 1000</p>
+          <p className="cta-final-note">Curso desde U$D 497 · Mentoría + Grupo Elite desde U$D 1000</p>
         </div>
       </section>
 
