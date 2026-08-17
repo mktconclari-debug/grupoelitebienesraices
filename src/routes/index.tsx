@@ -199,9 +199,8 @@ const MENTORIA = [
   "Todo lo del curso pregrabado",
   "Clase semanal en vivo 1 a 1 con Adriana",
   "Soporte directo 24/7 con Adriana",
-  "Acceso a sumarte a Grupo Elite Bienes Raíces",
-  "Oficina real en Puerto Madero",
-  "Estructura y equipo desde el día 1",
+  "Posibilidad de sumarte a Grupo Elite Bienes Raíces si vemos potencial en vos",
+  "Acceso al proceso de admisión al equipo de Grupo Elite",
   "Casos reales, operaciones reales, equipo real",
 ];
 
