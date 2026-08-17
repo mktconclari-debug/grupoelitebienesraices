@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import "../styles/academia.css";
+import adriana from "../assets/adriana.png.asset.json";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
