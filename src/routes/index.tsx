@@ -245,7 +245,7 @@ function Index() {
       <header className="hero">
         <span className="hero-pill">Sistema de formación inmobiliaria</span>
         <h1>
-          Este es el paso a paso exacto para escalar dentro de Real State, sistema validado en más de 50 inmobiliarios.
+          Este es el paso a paso exacto para escalar dentro de Real Estate, sistema validado en más de 50 inmobiliarios.
         </h1>
         <p className="hero-sub">
           Sistema de formación inmobiliaria para captar más, negociar mejor y cerrar más rápido.
