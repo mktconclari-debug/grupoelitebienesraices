@@ -11,9 +11,9 @@
   --navy: #0b1c2c;
   --navy-mid: #12273a;
   --navy-light: #1a3348;
-  --gold: #c9a84c;
-  --gold-light: #e8c96a;
-  --gold-pale: #f5e9c8;
+  --gold: #b8963f;
+  --gold-light: #d4b25a;
+  --gold-pale: #ecdcb4;
   --white: #ffffff;
   --off-white: #f8f5ee;
   --text-dark: #0b1c2c;
@@ -22,13 +22,13 @@
   --green: #3d6b47;
   --gold-gradient: linear-gradient(
     110deg,
-    #a07830 0%,
-    #c9a84c 25%,
-    #f0d078 45%,
-    #ffe9a0 50%,
-    #f0d078 55%,
-    #c9a84c 75%,
-    #a07830 100%
+    #8a6f28 0%,
+    #b8963f 25%,
+    #d9b862 45%,
+    #e9cf88 50%,
+    #d9b862 55%,
+    #b8963f 75%,
+    #8a6f28 100%
   );
   font-family: "Montserrat", sans-serif;
   background: var(--white);
@@ -71,7 +71,7 @@ html {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: radial-gradient(circle, #ffe9a0 0%, #c9a84c 50%, transparent 70%);
+  background: radial-gradient(circle, #e9cf88 0%, #b8963f 50%, transparent 70%);
   z-index: 9999;
   transform: scale(0);
   animation: spark-out 0.45s ease-out forwards;
@@ -1046,7 +1046,7 @@ html {
 /* ─── SEPARADOR DORADO ─── */
 .academia .gold-rule {
   height: 1px;
-  background: linear-gradient(90deg, transparent, #c9a84c 30%, #e8c96a 50%, #c9a84c 70%, transparent);
+  background: linear-gradient(90deg, transparent, #b8963f 30%, #d4b25a 50%, #b8963f 70%, transparent);
   margin: 0 auto;
   max-width: 240px;
   border: none;
