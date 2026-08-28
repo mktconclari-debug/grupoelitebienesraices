@@ -563,7 +563,7 @@ function Index() {
       <footer>
         <p className="footer-logo">Academia Grupo Elite</p>
         <p>
-          © 2025 Grupo Elite Bienes Raíces · Puerto Madero, Buenos Aires ·{" "}
+          © Grupo Elite Bienes Raíces · Puerto Madero, Buenos Aires ·{" "}
           <a href="#cta">Términos y condiciones</a>
         </p>
       </footer>
