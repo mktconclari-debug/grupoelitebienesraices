@@ -159,7 +159,7 @@ const BONUS = [
 const FAQS = [
   {
     q: "¿Sirve si vengo de otro rubro y no sé nada de inmobiliaria?",
-    a: "Sí. VM era maestra jardinera. MA trabajó en seguros 20 años. CB fue gerente de banco durante 30. El sistema está diseñado para que no necesites experiencia previa — necesitás disposición y seguir el proceso.",
+    a: "Sí. VM era maestra jardinera. MA trabajó en seguros 20 años. CB fue gerente de banco durante 30. El sistema está diseñado para que no necesites experiencia previa — necesitás disponibilidad y seguir el proceso.",
   },
   {
     q: "¿Cuánto tiempo tarda en verse resultados?",
