@@ -29,39 +29,39 @@ export const Route = createFileRoute("/")({
 const MODULOS = [
   {
     n: 1,
-    titulo: "Mentalidad e identidad del asesor",
+    titulo: "Mentalidad del asesor elite",
     texto:
       "Identidad, disciplina, objetivos, organización y eliminación de excusas. La base de todo.",
   },
   {
     n: 2,
-    titulo: "El negocio inmobiliario",
+    titulo: "Cómo captar propiedades",
     texto:
-      "Cómo funciona una operación, el rol del asesor, de dónde salen los honorarios y cómo construir una cartera.",
+      "ACM, prelisting, presentación de servicios, manejo de objeciones y posicionamiento. El sistema para captar más y mejor.",
   },
   {
     n: 3,
-    titulo: "Herramientas y sistema de trabajo",
+    titulo: "Cómo trabajar con compradores. Prebuying",
     texto:
-      "Cómo organizar contactos, agenda, propiedades y seguimientos. Método que se pueda repetir todos los días.",
+      "Cómo acompañar a un comprador desde el primer contacto hasta la compra, hacer prebuying profesional y cerrar la operación.",
   },
   {
     n: 4,
-    titulo: "Prospección y base relacional",
+    titulo: "Negociación y cierre",
+    texto:
+      "Cómo mostrar una propiedad, negociar, cerrar la reserva y hacer postventa para generar referidos.",
+  },
+  {
+    n: 5,
+    titulo: "Cómo prospectar y generar clientes",
     texto:
       "Cómo trabajar la base de contactos, llamadas en frío, guiones para hablar con propietarios y sistema de seguimiento.",
   },
   {
-    n: 5,
-    titulo: "Captación y marca personal",
-    texto:
-      "ACM, prelisting, presentación de servicios, manejo de objeciones y posicionamiento. Más construcción de marca personal y contenido en redes.",
-  },
-  {
     n: 6,
-    titulo: "Venta, negociación y cierre",
+    titulo: "Asesor Elite",
     texto:
-      "Cómo mostrar una propiedad, negociar, cerrar la reserva y hacer postventa para generar referidos.",
+      "Construcción de marca personal, contenido en redes y los hábitos que separan a un asesor común de un asesor Elite.",
   },
 ];
 
