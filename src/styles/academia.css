@@ -8,16 +8,16 @@
 }
 
 .academia {
-  --navy: #0b1c2c;
-  --navy-mid: #12273a;
-  --navy-light: #1a3348;
+  --navy: #012169;
+  --navy-mid: #0a2b7a;
+  --navy-light: #123a8f;
   --gold: #b8963f;
   --gold-light: #d4b25a;
   --gold-pale: #ecdcb4;
   --white: #ffffff;
   --off-white: #f8f5ee;
-  --text-dark: #0b1c2c;
-  --text-mid: #2a3c4e;
+  --text-dark: #1a1a1a;
+  --text-mid: #4a4a4a;
   --red: #b23b24;
   --green: #3d6b47;
   --gold-gradient: linear-gradient(

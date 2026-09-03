@@ -468,7 +468,7 @@ function Index() {
               </h3>
               <div className="oferta-precio">
                 <span className="precio-cur">U$D</span>
-                <span className="precio-num">1000 + IVA</span>
+                <span className="precio-num">997 + IVA</span>
               </div>
               <ul className="oferta-includes">
                 {MENTORIA.map((i) => (
@@ -556,7 +556,7 @@ function Index() {
           <a className="btn-cta-final" href="#oferta">
             Quiero el sistema
           </a>
-          <p className="cta-final-note">Curso U$D 397 + IVA · Mentoría 1 a 1 U$D 1000 + IVA</p>
+          <p className="cta-final-note">Curso U$D 397 + IVA · Mentoría 1 a 1 U$D 997 + IVA</p>
         </div>
       </section>
 
