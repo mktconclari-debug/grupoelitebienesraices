@@ -272,14 +272,12 @@ function Index() {
             cuando entraste al Real Estate
           </h2>
           <div className="video-frame">
-            <div className="video-placeholder">
-              <span className="play-btn">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </span>
-              <span className="video-placeholder-text">Insertar video del VSL aquí</span>
-            </div>
+            <iframe
+              src="https://www.tella.tv/video/vid_cmtnm0aeo001l0agmeosb8n27/embed"
+              title="Video de presentación de la Academia Grupo Elite"
+              allow="autoplay; fullscreen"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
