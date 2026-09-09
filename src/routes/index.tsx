@@ -464,10 +464,6 @@ function Index() {
                 Mentoría 1 a 1
                 <br />+ Grupo Elite
               </h3>
-              <div className="oferta-precio">
-                <span className="precio-cur">U$D</span>
-                <span className="precio-num">997 + IVA</span>
-              </div>
               <ul className="oferta-includes">
                 {MENTORIA.map((i) => (
                   <li key={i}>
