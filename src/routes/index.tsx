@@ -437,7 +437,7 @@ function Index() {
               <h3 className="oferta-nombre">Curso Pregrabado</h3>
               <div className="oferta-precio">
                 <span className="precio-cur">U$D</span>
-                <span className="precio-num">397</span>
+                <span className="precio-num">497</span>
                 <span className="precio-iva">+ IVA</span>
               </div>
               <ul className="oferta-includes">
@@ -550,7 +550,7 @@ function Index() {
           <a className="btn-cta-final" href="#oferta">
             Quiero el sistema
           </a>
-          <p className="cta-final-note">Curso U$D 397 + IVA · Mentoría 1 a 1 U$D 997 + IVA</p>
+          <p className="cta-final-note">Curso U$D 497 + IVA · Mentoría 1 a 1 U$D 997 + IVA</p>
         </div>
       </section>
 
